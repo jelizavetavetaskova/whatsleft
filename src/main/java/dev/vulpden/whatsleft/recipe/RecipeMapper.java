@@ -12,6 +12,7 @@ public class RecipeMapper {
         dto.setCookingTime(recipe.getCookingTime());
         dto.setDifficulty(recipe.getDifficulty());
         dto.setPathToImage(recipe.getPathToImage());
+        dto.setDescription(recipe.getDescription());
 
         return dto;
     }
