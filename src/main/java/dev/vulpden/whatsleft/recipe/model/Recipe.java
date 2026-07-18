@@ -25,6 +25,7 @@ public class Recipe {
     private Long recipeId;
 
     private String title;
+    private String description;
     private Integer cookingTime;
 
     @Enumerated(EnumType.STRING)

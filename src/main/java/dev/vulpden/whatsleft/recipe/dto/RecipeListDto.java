@@ -11,6 +11,7 @@ import lombok.*;
 public class RecipeListDto {
     private Long recipeId;
     private String title;
+    private String description;
     private Integer cookingTime;
     private Difficulty difficulty;
     private String pathToImage;

@@ -36,6 +36,7 @@ import type {Page} from "@/types/app.ts";
   <div v-else>
     <div v-for="recipe in recipes" :key="recipe.recipeId">
       <p>{{recipe.title}}</p>
+      <p>{{recipe.description}}</p>
       <p>{{recipe.cookingTime}}</p>
       <p>{{recipe.difficulty}}</p>
     </div>
