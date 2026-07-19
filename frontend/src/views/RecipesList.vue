@@ -35,9 +35,9 @@ onMounted(async () => {
   <div v-else-if="error">{{error}}</div>
   <div v-else>
     <div v-for="recipe in recipes" :key="recipe.recipeId">
-      <p>{{recipe.title}}</p>
-      <p>{{recipe.description}}</p>
-      <p>{{recipe.cookingTime}}</p>
+      <RouterLink :to="`/recipes/${recipe.recipeId}`">{{recipe.title}}</RouterLink>
+      <p v-if="recipe.description">{{recipe.description}}</p>
+      <p v-if="recipe.cookingTime">{{recipe.cookingTime}}</p>
       <p>{{recipe.difficulty}}</p>
     </div>
   </div>
